@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	var req = new XMLHttpRequest();
-	req.open('GET', 'https://pastebin.com/raw/45M08KT7', true); 
+	req.open('GET', 'https://io.adafruit.com/api/v2/veintiseis/feeds/command', true); 
 	req.onreadystatechange = function () {
 		if (req.readyState == 4)
   		if  (req.status == 200) {
