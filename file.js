@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+	var reqURL = 'https://io.adafruit.com/api/v2/veintiseis/groups/sensores?x-aio-key=5515a3ad171c4034afe4ec86ed34999f'
 	var req = new XMLHttpRequest();
-	req.open('GET', 'https://io.adafruit.com/api/v2/veintiseis/feeds/command', true); 
+	req.open('GET', reqURL, true);
 	req.onreadystatechange = function () {
 		if (req.readyState == 4)
   		if  (req.status == 200) {
