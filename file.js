@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (req.readyState == 4)
   		if  (req.status == 200) {
    			obj = JSON.parse(req.responseText);
-   			display(obj,"");
+   			html.innerHTML = req.last_value;
   		}
 			else {
 	   html.innerHTML+="<p>error "+req.status;
