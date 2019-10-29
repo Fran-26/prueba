@@ -4,15 +4,25 @@
 		<script src="file.js"></script>
 		<title>Valor de Sensores</title>
 		<style>
-			img {
-				width: 100%;
+			.container {
+				position: relative;
+			}
+
+			.topleft {
+				position: absolute;
+				top: 374px;
+				left: 897px;
+				font-size: 18px;
 			}
 		</style>
 	</head>
 	<body>
-		<img src="plano.png" alt="casa :D">
+		<div class="container">
+  			<img src="plano.png" width="100%">
+  			<div class="topleft">Puerta Principal: </div>
 		<h1 id = "sensor_1"></h1>
 		<h1 id = "sensor_2"></h1>
 		<h1 id = "sensor_3"></h1>
+		</div>
 	</body>
 </html>
