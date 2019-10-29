@@ -10,9 +10,9 @@ function update (){
 	if (req.readyState == 4)
 		if  (req.status == 200) {
    		obj = JSON.parse(req.responseText);
-			sensor_1.innerHTML = "Valor de Sensor 1: "+ obj.feeds[0].last_value;
-			sensor_2.innerHTML = "Valor de Sensor 2: "+ obj.feeds[1].last_value;
-			sensor_3.innerHTML = "Valor de Sensor 3: "+ obj.feeds[2].last_value;
+			sensor_1.innerHTML = "Puerta Principal: "+ obj.feeds[0].last_value;
+			sensor_2.innerHTML = "Ventana Sala: "+ obj.feeds[1].last_value;
+			sensor_3.innerHTML = "Ventana Atras: "+ obj.feeds[2].last_value;
 		}
 		else {
 	  	html.innerHTML+="<p>error "+req.status;
