@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function update (){
-	var reqURL = 'https://io.adafruit.com/api/v2/veintiseis/groups/sensores?x-aio-key=5515a3ad171c4034afe4ec86ed34999f'
+	var reqURL = '	https://io.adafruit.com/api/v2/veintiseis/groups/default?x-aio-key=5515a3ad171c4034afe4ec86ed34999f'
 	var req = new XMLHttpRequest();
 	req.open('GET', reqURL, true);
 	req.onreadystatechange = function () {
