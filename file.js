@@ -9,11 +9,17 @@ function update (){
 	req.onreadystatechange = function () {
 	if (req.readyState == 4)
 		if  (req.status == 200) {
-   		obj = JSON.parse(req.responseText);
-			sensor_1.innerHTML = "Puerta Principal: "+ obj.feeds[1].last_value;
-			sensor_2.innerHTML = "Ventana Sala: "+ obj.feeds[2].last_value;
-			sensor_3.innerHTML = "Ventana Atras: "+ obj.feeds[3].last_value;
-			sensor_4.innerHTML = "Temperatura de la Sala: " + obj.feeds[4].last_value;
+   			obj = JSON.parse(req.responseText);
+			obj.feeds.forEach() => {
+				if (this.name = "sensor_1")
+					sensor_1.innerHTML = "Puerta Principal: " + this.last_value;
+				if (this.name = "sensor_2")
+					sensor_2.innerHTML = "Ventana Sala: " + this.last_value;
+				if (this.name = "sensor_3")
+					sensor_3.innerHTML = "Ventana Atras: " + this.last_value;
+				if (this.name = "temperature")
+					sensor_4.innerHTML = "Temperatura de la Sala: " + this.last_value;				
+			}
 		}
 		else {
 	  	html.innerHTML+="<p>error "+req.status;
