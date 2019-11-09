@@ -51,7 +51,7 @@ function update (){
 }
 
 function alarma () {
-	if (armado && (puerta_1 == "abierta" || ventana_1 == "abierta" || ventana_2 == "abierta")) {
+	if (armado && (puerta_1 == "abierto" || ventana_1 == "abierto" || ventana_2 == "abierto")) {
 		alert("Zona abierta");
 	}
 }
