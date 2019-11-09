@@ -3,37 +3,12 @@
 	<head>
 		<script src="file.js"></script>
 		<title>Valor de Sensores</title>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<style>
-			.container {
-				position: relative;
-			}
-
-			.topleft {
-				position: absolute;
-				width: 150px;
-				font-size: 18px;
-			}
-			#sensor_1 {
-				top: 350px;
-				left: 915px;
-			}
-			#sensor_2 {
-				top: 635px;
-				left: 600px;
-			}
-			#sensor_3 {
-				top: 140px;
-				left: 68px;
-			}
-			#sensor_4 {
-				top: 300px;
-				left: 450px;
-				width: 120px;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<button type="button" id = "connect" onclick="activar()" class="btn btn-primary">Bloquear Alarma <i class="fas fa-lock"></i></button><!--   -->
 		<div class="container">
   			<img src="plano.png" width="966" height="733">
   			<div class="topleft" id = "sensor_1"></div>
