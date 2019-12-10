@@ -37,8 +37,16 @@ function update (){
 					ventana_2 = item.last_value;
 				}
 				if (item.name == "temperature") {
-					sensor_4.innerHTML = "Temperatura de la Sala: " + item.last_value;								
-					temperatura_1 = item.last_value;
+					sensor_4.innerHTML = "Temperatura de la Sala: " + item.last_value + "°/ " + humedad_sala;
+				}
+				if (item.name == "temperature_room") {
+					sensor_5.innerHTML = "Temperatura del Cuarto: " + item.last_value + "°/ " + humedad_cuarto;
+				}
+				if (item.name == "humidity") {
+					humedad_sala = item.last_value;
+				}
+				if (item.name == "humidity_room") {
+					humedad_cuarto = item.last_value;
 				}
 			});
 		}
