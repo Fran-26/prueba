@@ -51,7 +51,7 @@ function update (){
 			});
 		}
 		else {
-	  	html.innerHTML+="<p>error "+req.status;
+	  	html.innerHTML = "<p>error "+req.status;
  		}
 	};
 	req.send(null);
